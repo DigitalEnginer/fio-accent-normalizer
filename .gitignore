@@ -1,0 +1,39 @@
+# ── Исходные и производные данные (в репозиторий не входят) ──
+/names.csv
+*.docx
+*.xlsx
+*.ndjson
+/outputs/
+/kz-accent-model/outputs/
+/kz-accent-model/review/
+/kz-accent-model/audit/
+/kz-accent-model/artifacts/
+/name-normalizer/web/data/
+/name-normalizer/web/reports/
+
+# ── Секреты ──
+.env
+.env.*
+!.env.example
+
+# ── Логи и временные файлы ──
+*.log
+.local-logs/
+/.tmp/
+
+# ── Зависимости и сборка ──
+node_modules/
+.pnpm-store/
+.venv/
+__pycache__/
+*.pyc
+.next/
+.vinext/
+.wrangler/
+dist/
+*.tsbuildinfo
+
+# ── Веса моделей ──
+*.pt
+*.onnx
+*.sqlite
